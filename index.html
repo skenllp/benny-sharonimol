@@ -353,7 +353,9 @@ body[style*="overflow: hidden"] .page:not(#open):not(#hero){
   display:flex;flex-direction:column;align-items:center;gap:2px;
 }
 #hero .hero-name{
-  font-family:var(--font-script);
+  font-family:var(--font-display);
+  font-weight:500;
+  font-style:italic;
   font-size:clamp(46px,15vw,64px);
   color:var(--ivory);
   line-height:1.05;
@@ -927,7 +929,10 @@ body[style*="overflow: hidden"] .page:not(#open):not(#hero){
    ============================================================ */
 @media (min-width:720px){
   .site{box-shadow:0 0 120px rgba(0,0,0,0.6);}
-  #hero .hero-name{font-size:74px;}
+  #hero .hero-name{
+    font-size:74px;
+    letter-spacing:0.02em;
+  }
   .gallery-grid{grid-template-columns:1fr 1fr 1fr;}
   .gallery-grid .tall{grid-row:span 2;}
 }
